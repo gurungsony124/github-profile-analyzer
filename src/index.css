@@ -121,10 +121,45 @@
   * {
     @apply border-border outline-ring/50;
     }
+  html, body, #root {
+    @apply min-h-screen bg-[#0D0F16] text-foreground;
+    margin: 0;
+    background-color: #0D0F16;
+    background-attachment: fixed;
+  }
+
   body {
-    @apply bg-background text-foreground;
-    }
+    @apply bg-[#0D0F16] text-white;
+    overflow-y: auto;
+  }
+
   html {
     @apply font-sans;
-    }
+    background: #0D0F16;
+  }
+}
+
+@keyframes card-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
+  }
+  20% {
+    transform: translateY(-4px);
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  45% {
+    transform: translateY(1px);
+    animation-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  70% {
+    transform: translateY(-2px);
+    animation-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+}
+
+.card-bounce {
+  animation: card-bounce 3.2s ease-in-out infinite;
+  transform-origin: center bottom;
 }
