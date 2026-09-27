@@ -1,8 +1,10 @@
 import CardComponent from "@/components/CardComponent";
 import Navbar from "@/components/Navbar";
-import Search from "@/components/Search";
+import Username from "./Username/Username";
+import Search from "@/components/usernameSearch";
 
 export default function Home() {
+  
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden bg-[#0D0F16] text-white">
       <Navbar />
@@ -26,7 +28,7 @@ export default function Home() {
         </div>
           
         </div>
-            
+            <Username username=""/>
       </main>
     </div>
   );
