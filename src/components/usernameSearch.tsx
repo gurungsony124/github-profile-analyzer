@@ -26,7 +26,8 @@ export default function UserNameSearch() {
   }
   console.log(searchUser);
   return (
-    <div className="flex items-center gap-6">
+    <>
+    <div className="flex items-center gap-6 mb-10">
       <div className="flex flex-1 items-center gap-3 rounded-[22px] border border-white/15 bg-[#111827]/20 px-4 py-3 text-white/90 transition-all duration-300 focus-within:border-[#7c7af8] focus-within:shadow-[0_0_0_2px_rgba(124,122,248,0.3),0_0_18px_rgba(124,122,248,0.18)]">
         <LuGithub className="h-5 w-5 text-white/90" />
         <Input
@@ -43,6 +44,8 @@ export default function UserNameSearch() {
         <IoMdSearch className="h-5 w-5" />
         Analyze
       </Button>
+      
     </div>
+  </>
   );
 }

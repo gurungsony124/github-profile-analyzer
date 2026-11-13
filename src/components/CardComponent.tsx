@@ -26,7 +26,7 @@ export default function CardComponent() {
           <div className="flex flex-col">
             <span className="text-[20px] font-bold tracking-wider text-white">142</span>
             <span className="mt-0.5 text-[12px] text-[#a3a3a8]">Repos</span>
-          </div>
+          </div>I
           <div className="flex flex-col">
             <span className="text-[20px] font-bold tracking-wider text-white">9,204</span>
             <span className="mt-0.5 text-[12px] text-[#a3a3a8]">Followers</span>
@@ -43,8 +43,7 @@ export default function CardComponent() {
           <div className="flex items-center justify-between gap-3">
             <span className="w-20 text-[13px] font-medium text-[#a3a3a8]">TypeScript</span>
             <div className="flex-1 overflow-hidden rounded-full bg-[#3b3a43]">
-              <div className="h-2.5 w-[62%] rounded-full bg-[#827bdf]" />
-            </div>
+              <div className="h-2.5 w-[62%] rounded-full bg-[#827bdf]" />            </div>
             <span className="w-8 text-right text-[13px] text-[#a3a3a8]">62%</span>
           </div>
 

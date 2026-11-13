@@ -11,6 +11,7 @@ export default function UserDetails() {
       <p>Something is Wrong</p>
     )
    }
+   console.log("The data are:", user);
 
   return (
     <div className="text-white mt-40">
